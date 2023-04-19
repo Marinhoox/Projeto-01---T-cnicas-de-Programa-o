@@ -1,7 +1,7 @@
 function geraArrayDeUrl(arrayLinks){
     return arrayLinks.map(objetoLink => Object.values(objetoLink).join())
 }
-function validaURLArray(arrayLinks){
+function validaArrayURL(arrayLinks){
     return geraArrayDeUrl(arrayLinks)
 }
-export default validaURLArray;
+export default validaArrayURL;

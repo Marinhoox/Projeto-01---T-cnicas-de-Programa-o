@@ -1,3 +1,4 @@
+import chalk from 'chalk';
 import fs from 'fs';
 
 function extraiLinks(texto){
@@ -12,7 +13,7 @@ function extraiLinks(texto){
 }
 
 function trataErro(erro){
-    throw new Error(console.log(erro.code, "ARQUIVO NÃO ENCONTRADO"));
+    throw new Error(chalk.red(erro.code, "Não há arquivo no caminho"));
 }
 
 async function pegaArquivo(caminhoDoArquivo){

@@ -1,8 +1,8 @@
 import fs from 'fs';
 
-async function readAllFile(pathFile) {
+async function leituraTexto(pathFile) {
     const texto = await fs.promises.readFile(pathFile, 'utf-8')
     return(texto)
 }
 
-export default readAllFile('./arquivos/texto.md');
+export default leituraTexto('./arquivos/texto.md');
